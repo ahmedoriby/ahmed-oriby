@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resilient - Fashion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+          <a href="#home" class="logo-link">
+    <img src="images/resilient_logo.png" alt="RSLT Logo" class="logo-img">
+</a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#collections" class="nav-link">Collections</a></li>
+                <li><a href="#featured" class="nav-link">Featured</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#contact" class="nav-cta">Get In Touch</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-nav" id="mobileNav">
+        <ul class="mobile-nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#collections">Collections</a></li>
+            <li><a href="#featured">Featured</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-container">
+            <div class="hero-left">
+                <div class="hero-badge">New Collection 2025</div>
+                <h1 class="hero-title">
+                    <span class="line"><span>Born</span></span>
+                    <span class="line"><span>To Be <span class="accent">Wild</span></span></span>
+                </h1>
+                <p class="hero-description">
+                    Discover our avant-garde collection where high fashion meets street culture. 
+                    Each piece tells a story of rebellion, elegance, and innovation.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Exclusive Pieces</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">24H</span>
+                        <span class="stat-label">Fast Delivery</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Sustainable</span>
+                    </div>
+                </div>
+                <div class="cta-group">
+                    <a href="#collections" class="cta-button primary">Explore Collection</a>
+                    <a href="#featured" class="cta-button outline">Watch Runway</a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="hero-image-wrapper">
+                    <div class="hero-carousel">
+                        <div class="carousel-slide active">
+                            <img src="images/hero/3.jpg" alt="Fashion Model 1">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/hero/resilient.jpg" alt="Fashion Model 2">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/hero/11.jpg" alt="Fashion Model 3">
+                        </div>
+                        <div class="carousel-overlay"></div>
+                        <div class="carousel-indicators">
+                            <span class="indicator active" data-slide="0"></span>
+                            <span class="indicator" data-slide="1"></span>
+                            <span class="indicator" data-slide="2"></span>
+                        </div>
+                    </div>
+                    <div class="floating-tags">
+                        <div class="tag">Limited Edition</div>
+                        <div class="tag">Handcrafted</div>
+                        <div class="tag">Premium Quality</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <section class="collections" id="collections">
+        <div class="section-header">
+            <h2 class="section-title">Latest Collections</h2>
+            <p class="section-subtitle">Discover our curated selection</p>
+        </div>
+        
+        <div class="category-tabs">
+            <button class="tab-btn active" data-category="all">All</button>
+            <button class="tab-btn" data-category="women">Women</button>
+            <button class="tab-btn" data-category="men">Men</button>
+            <button class="tab-btn" data-category="accessories">Accessories</button>
+            <button class="tab-btn" data-category="limited">Limited Edition</button>
+        </div>
+
+        <div class="grid" id="collectionsGrid">
+            <div class="collection-card" data-category="Men">
+                <div class="collection-thumbnail">
+                    <img src="images/products/egypt.jpg" alt="Urban Edge Women's Collection">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">New Arrival</span>
+                    <h3 class="card-title">Hoodie embroidered with the word "Egypt"</h3>
+                    <p class="card-subtitle">Men's Collection</p>
+                    <p class="card-price">price : 850 EGP </p>
+                </div>
+            </div>
+            <div class="collection-card" data-category="limited">
+                <div class="collection-thumbnail">
+                    <img src="images/products/mzagg.jpg" alt="Midnight Luxe Limited Edition">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Limited</span>
+                    <h3 class="card-title">Hoodie with the word "mizaj mueadal"</h3>
+                    <p class="card-subtitle">Exclusive Drop</p>
+                    <p class="card-price">price : 1100 EGP</p>
+                </div>
+            </div>
+            <div class="collection-card" data-category="men">
+                <div class="collection-thumbnail">
+                    <img src="images/products/4.jpg" alt="Neo Classic Men's Essentials">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Bestseller</span>
+                    <h3 class="card-title"> Resilient Hoodie Basic</h3>
+                    <p class="card-subtitle">Men's Essentials</p>
+                    <p class="card-price">price : 1170 EGP</p>
+                </div>
+            </div>
+            <div class="collection-card" data-category="accessories">
+                <div class="collection-thumbnail">
+                    <img src="images/products/13.jpg" alt="Accent Pieces Accessories">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Trending</span>
+                    <h3 class="card-title">silver anchor chain</h3>
+                    <p class="card-subtitle">Accessories</p>
+                    <p class="card-price">price : 450 EGP</p>
+                </div>
+            </div>
+            <div class="collection-card" data-category="women">
+                <div class="collection-thumbnail">
+                    <img src="images/hero/resilient.jpg" alt="Spring Bloom Women's Spring">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Pre-Order</span>
+                    <h3 class="card-title">Resilient Hoodie for women </h3>
+                    <p class="card-subtitle">Women's Spring</p>
+                    <p class="card-price">price : 1800 EGP</p>
+                </div>
+            </div>
+            <div class="collection-card" data-category="Men">
+                <div class="collection-thumbnail">
+                    <img src="images/products/36.jpg" alt="Street Rebel Men's Streetwear">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Hot</span>
+                    <h3 class="card-title">Street Rebel</h3>
+                    <p class="card-subtitle">Men's Streetwear</p>
+                    <p class="card-price">price 1700 EGP</p>
+                </div>
+            </div>
+            <div class="collection-card" data-category="women">
+                <div class="collection-thumbnail">
+                    <img src="images/products/6.jpg" alt="Avant Garde Art Meets Fashion">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Exclusive</span>
+                    <h3 class="card-title">Avant Garde</h3>
+                    <p class="card-subtitle">Art Meets Fashion</p>
+                    <p class="card-price">price : 2250 EGP  </p>
+                </div>
+            </div>
+            <div class="collection-card" data-category="accessories">
+                <div class="collection-thumbnail">
+                    <img src="images/products/122.jpg" alt="Minimal Chic Timeless Accessories">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Essentials</span>
+                    <h3 class="card-title">Women's gold snake ring</h3>
+                    <p class="card-subtitle">Timeless Accessories</p>
+                    <p class="card-price">price 475 EGP </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured" id="featured">
+        <div class="featured-container">
+            <div class="featured-hero">
+                <div class="featured-content">
+                    <span class="label">Crafted with Passion</span>
+                    <h2>The Art of Fashion</h2>                  
+                    <div class="feature-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">👑</div>
+                            <div class="highlight-title">Premium Quality</div>
+                            <div class="highlight-desc">Only the finest materials and fabrics make it into our collections</div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">🌱</div>
+                            <div class="highlight-title">Sustainable</div>
+                            <div class="highlight-desc">Ethically sourced materials with carbon-neutral production</div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">✨</div>
+                            <div class="highlight-title">Handcrafted</div>
+                            <div class="highlight-desc">Each piece is carefully crafted by skilled artisans</div>
+                        </div>
+                    </div>
+                    
+                    <a href="#collections" class="feature-cta">Discover Our Craft</a>
+                </div>
+                
+                <div class="featured-image-section">
+                    <div class="featured-image-grid">
+                        <div class="featured-img">
+                            <img src="images/hero/33.jpg" alt="Fashion Collection Showcase">
+                        </div>
+                        <div class="featured-img">
+                            <img src="images/hero/99.jpg" alt="Luxury Fashion Details">
+                        </div>
+                        <div class="featured-img">
+                            <img src="images/hero/22.jpg" alt="Artisan Craftsmanship">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonials">
+                <div class="testimonials-header">
+                    <h3>What Our Customers Say</h3>
+                    <p class="section-subtitle">Real stories from fashion enthusiasts</p>
+                </div>
+                
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">★★★★★</div>
+                        <div class="testimonial-quote">
+                            "رسلت براند هايل و جوده ممتازه هفضل اجيب منو علي طول ... شكرا ليكوا "
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">S</div>
+                            <div class="author-info">
+                                <h4>yasmin sabry</h4>
+                                <p>actor</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">★★★★★</div>
+                        <div class="testimonial-quote">
+                            "Thank you for these wonderful products."
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">M</div>
+                            <div class="author-info">
+                                <h4>Marcus Rodriguez</h4>
+                                <p>Creative Director</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">★★★★★</div>
+                        <div class="testimonial-quote">
+                            "افضل براند في مصر ."
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">A</div>
+                            <div class="author-info">
+                                <h4>ahmed oriby</h4>
+                                <p>programmer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <div class="contact-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">We'd love to hear from you</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-form-wrapper">
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="John" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="How can we help?" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Tell us more about your inquiry..." required></textarea>
+                        </div>
+                        <button type="submit" class="form-submit">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div class="info-content">
+                            <h3>Visit Our Flagship Store</h3>
+                            <p> Gharbia Governorate, Egypt<br>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div class="info-content">
+                            <h3>Call Us</h3>
+                            <p>Main: <a href="tel:+2001210988660">+20 01210988660</a><br>
+                            Support: <a href="tel:+20 01553440295">+20 01553440295</a><br>
+                            Mon-Fri, 9AM-6PM ICT</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">✉️</div>
+                        <div class="info-content">
+                            <h3>Email Us</h3>
+                            <p>General: <a href="mailto:hello@noir.fashion">ahmedoriby0@gmail.com</a><br>
+                            Support: <a href="mailto:support@noir.fashion">ahmedoriby2004@gmail.com</a><br>
+                            Press: <a href="mailto:press@noir.fashion">press@gmail.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Resilient</h3>
+                <p>Redefining fashion with bold designs, sustainable practices, and uncompromising quality. Join us in creating the future of style.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">f</a>
+                    <a href="#" class="social-link">t</a>
+                    <a href="#" class="social-link">i</a>
+                    <a href="#" class="social-link">p</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Sale</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Terms</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 . All rights reserved | Designed by <a href="https://www.instagram.com/ahmedoriby_?igsh=ZmtnaXVzOW55a200&utm_source=qr" target="_blank" rel="nofollow" style="color: var(--accent); text-decoration: none;">Ahmed Oriby & Alaa Hamdy & yousef mitwaly</a></p>
+            <div class="payment-methods">
+                <div class="payment-icon">VISA</div>
+                <div class="payment-icon">MC</div>
+                <div class="payment-icon">AMEX</div>
+                <div class="payment-icon">PAY</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JAVA.js"></script>
+</body>
+</html>
